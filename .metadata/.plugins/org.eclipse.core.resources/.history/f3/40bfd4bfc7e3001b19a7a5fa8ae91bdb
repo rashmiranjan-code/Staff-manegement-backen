@@ -1,0 +1,5 @@
+package com.ascent.crudoperation.model;
+
+public class Staff {
+
+}

@@ -1,0 +1,41 @@
+package com.ascent.crudoperation.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ascent.crudoperation.model.Staff;
+import com.ascent.crudoperation.repository.StaffRepository;
+@Service
+public class StaffServiceImpl implements IStaffService {
+	@Autowired
+	private StaffRepository srepo;
+
+	@Override
+	public boolean saveStaff(Staff staff) {
+		// TODO Auto-generated method stub
+		Staff savedStaff = srepo.save(staff);
+		return savedStaff.getStaffId() != null ? true : false ;
+	}
+
+	@Override
+	public boolean updateStaff(Staff staff) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Staff> getAllStaff() {
+		// TODO Auto-generated method stub
+		return srepo.findAll();
+	}
+
+	@Override
+	public boolean deleteStaffById(Integer staffId) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	
+}

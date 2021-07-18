@@ -1,0 +1,33 @@
+package com.ascent.crudoperation.service;
+
+import java.util.List;
+
+import com.ascent.crudoperation.model.Staff;
+
+public class StaffServiceImpl implements IStaffService {
+
+	@Override
+	public void saveStaff(Staff s) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void updateStaff(Integer id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Staff> getAllStaff() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteStaff(Integer id) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
