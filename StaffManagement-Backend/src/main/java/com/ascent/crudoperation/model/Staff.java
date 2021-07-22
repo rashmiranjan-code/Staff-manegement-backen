@@ -2,6 +2,8 @@ package com.ascent.crudoperation.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -9,13 +11,14 @@ import javax.persistence.Table;
 @Table(name="STFF_DTLS")
 public class Staff {
 	@Id
-	@Column(name="Id")
+	//@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@Column(name="staff_Id",length = 5)
 	private Integer staffId;
-	@Column(name="Staff_name")
+	@Column(name="Staff_name",length = 25)
 	private String staffName;
-	@Column(name="Staff_email")
+	@Column(name="Staff_email",length = 25)
 	private String staffEmailId;
-	@Column(name="Staff_phone")
+	@Column(name="Staff_phone",length = 13)
 	private String staffPhoneNumber;
 	public Integer getStaffId() {
 		return staffId;

@@ -58,8 +58,8 @@ public class StaffRestController {
 	@PutMapping("/update")
     public ResponseEntity<String> updateStaff(@RequestBody Staff staff) {
 		
-			boolean updateStaff = staffService.updateStaff(staff);
-			if(updateStaff) {
+			boolean isUpdated = staffService.updateStaff(staff);
+			if(isUpdated) {
 				return new ResponseEntity<>("Staff Data updated", HttpStatus.OK);
 				
 			}else {

@@ -1,7 +1,0 @@
-package com.ascent.crudoperation.repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public class StaffRepository implements JpaRepository<T, ID> {
-
-}

@@ -1,5 +1,0 @@
-package com.ascent.crudoperation.service;
-
-public interface IStaffService {
-
-}

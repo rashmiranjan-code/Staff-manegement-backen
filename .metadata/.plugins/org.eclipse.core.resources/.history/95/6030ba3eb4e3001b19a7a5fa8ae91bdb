@@ -1,5 +1,0 @@
-server.port=8080
-spring.datasource.driver-class-name=
-spring.datasource.url=jdbc:sqlserver://localhost;databaseName=master
-spring.datasource.username=
-spring.datasource.password=
